@@ -1,0 +1,109 @@
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 175px;
+  width: 700px;
+  height: 400px;
+  box-shadow: 6px 10px 9px 10px #888888;
+  border-radius: 15px;
+  background: #360033; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0b8793,
+    #360033
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0b8793,
+    #360033
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card .wave svg {
+  position: absolute;
+  margin-top: 312px;
+  width: 700px;
+  border-radius: 15px;
+}
+
+.card .wave .up {
+  position: absolute;
+  margin-top: 0px;
+  width: 700px;
+  border-radius: 15px;
+}
+
+.item-1 {
+  width: 350px;
+  height: 400px;
+  text-align: center;
+  box-shadow: 5px 6px 9px -6px #333;
+  border-radius: 4px;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  z-index: 99;
+  position: relative;
+}
+
+.role {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.code {
+  width: 200px;
+  margin-bottom: 2px;
+  margin-top: 6px;
+  z-index: 99;
+  position: relative;
+}
+
+.caption {
+  font-size: 12px;
+  font-weight: 900;
+  margin-top: 2px;
+  z-index: 99;
+  color: #fff;
+  position: relative;
+}
+
+.item-2 {
+  width: 350px;
+  height: 400px;
+  text-align: center;
+}
+
+.id {
+  font-size: 19px;
+  margin-top: 110px;
+  margin-bottom: 4px;
+  font-weight: bolder;
+}
+
+.fontId {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: light;
+}
+
+.link {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5px;
+  margin-right: 2px;
+  gap: 3%;
+  font-size: 12px;
+  font-weight: light;
+}
+
+.pink {
+  color: #ffd6ec;
+}
