@@ -1,0 +1,90 @@
+@import-normalize;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.grid--container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.grid--places {
+  grid-area: 1 / 1 / 6 / 3;
+  padding: 5px 30px;
+  margin-top: 25px;
+}
+.grid--maps {
+  grid-area: 1 / 3 / 6 / 6;
+  padding: 5px 30px;
+  margin-top: 25px;
+}
+
+header {
+  padding: 2px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: -1px 10px 13px -3px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: -1px 10px 13px -3px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: -1px 10px 13px -3px rgba(0, 0, 0, 0.81);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-around;
+}
+
+span {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+}
+
+select {
+  font-size: 15px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+h2 {
+  text-align: center;
+}
