@@ -2,19 +2,18 @@ import React from "react";
 import Header from "./components/Header";
 import Map from "./components/Map";
 import Place from "./components/Place";
-import AutoComplete from "./components/AutoComplete";
 
 function App() {
   return (
     <div>
       <Header />
 
-      <div class="grid--container">
-        <div class="grid--places">
+      <div className="grid--container">
+        <div className="grid--places">
           <Place />
         </div>
 
-        <div class="grid--maps">
+        <div className="grid--maps">
           <Map />
         </div>
       </div>

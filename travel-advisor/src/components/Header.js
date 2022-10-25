@@ -1,15 +1,13 @@
-import React, { useRef } from "react";
-import { StandaloneSearchBox, LoadScript } from "@react-google-maps/api";
+import React, { useState } from "react";
+import axios from "axios";
 
 const Header = () => {
-  const inputRef = useRef();
+  const [onSearch, setOnSearch] = useState("");
+  console.log(onSearch);
 
-  const handlePlaceChanged = () => {
-    const [place] = inputRef.current.getPlaces();
-    if (place) {
-      console.log(place.formatted_address);
-      console.log(place.geometry.location.lat());
-      console.log(place.geometry.location.lng());
+  const enterKey = (e) => {
+    if (e.key === "Enter") {
+      alert("hello");
     }
   };
 
@@ -18,17 +16,15 @@ const Header = () => {
       <h2>Travel Advisor</h2>
       <div className="search">
         <h4>Explore new places</h4>
-        <LoadScript
-          googleMapsApiKey={["AIzaSyAGaAxw9Z2DO1fUU1TCteyqyQfzONFrsjY"]}
-          libraries={["places"]}
-        >
-          <StandaloneSearchBox
-            onLoad={(ref) => (inputRef.current = ref)}
-            onPlacesChanged={handlePlaceChanged}
-          >
-            <input type="serach" placeholder="Search ..." />
-          </StandaloneSearchBox>
-        </LoadScript>
+        <input
+          type="serach"
+          placeholder="Search ..."
+          value={onSearch}
+          onChange={(e) => {
+            setOnSearch(e.target.value);
+          }}
+          onKeyDown={enterKey}
+        />
       </div>
     </header>
   );
